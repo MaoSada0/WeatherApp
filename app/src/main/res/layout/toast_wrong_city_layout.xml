@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+    android:background="@drawable/custom_toast"
+    android:padding="15dp"
+    android:id="@+id/toast_wrong"
+    android:elevation="8dp">
+
+
+    <TextView
+        android:id="@+id/toast_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Не могу найти город :("
+        android:textColor="@color/white"
+        android:textStyle="normal"
+        android:textSize="18sp"
+        android:padding="5dp">
+
+    </TextView>
+
+</LinearLayout>

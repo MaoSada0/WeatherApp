@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/blue">
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_gravity="center_horizontal"
+        android:layout_margin="8dp">
+
+        <EditText
+            android:inputType="text"
+            android:id="@+id/CityED"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:hint="City"
+            android:paddingStart="15dp"
+            android:background="@drawable/custom_edittext"
+            android:layout_weight="1">
+
+        </EditText>
+
+
+        <ImageButton
+            android:id="@+id/go"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/baseline_search_24"
+            app:cornerRadius="5dp"
+            android:layout_weight="7"
+            android:background="@drawable/custom_search"
+            >
+
+        </ImageButton>
+
+
+    </LinearLayout>
+
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:layout_gravity="center">
+
+        <TextView
+            android:id="@+id/CityTW"
+            android:hint="City"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="40sp"/>
+
+        <TextView
+            android:id="@+id/temperature"
+            android:hint="temperature"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="normal"
+            android:textSize="60sp"/>
+
+        <TextView
+            android:id="@+id/conditionTW"
+            android:hint="condition"
+            android:textColor="@color/white"
+            android:gravity="center"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textStyle="normal"
+            android:textSize="20sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:background="@drawable/custom_hours"
+            android:layout_margin="10dp">
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/custom_hours"
+            android:layout_margin="10dp">
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+
+
+</LinearLayout>

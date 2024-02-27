@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/gradient_all_background">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:orientation="horizontal"
+                android:layout_gravity="center_horizontal"
+                android:layout_margin="12dp">
+                <EditText
+                    android:id="@+id/CityED"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/custom_edittext"
+                    android:fontFamily="sans-serif-light"
+                    android:hint="City"
+                    android:textColor="@color/white"
+                    android:inputType="text"
+                    android:paddingStart="15dp"
+                    android:textColorHint="#FFFFFF"
+                    android:layout_weight="1">
+
+                </EditText>
+
+                <ImageButton
+                    android:id="@+id/go"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/baseline_search_24"
+                    app:cornerRadius="5dp"
+                    android:layout_weight="9"
+                    android:background="@drawable/custom_search"
+                    >
+
+                </ImageButton>
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/cityText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-light"
+                android:text="City"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="50sp">
+
+            </TextView>
+
+            <TextView
+                android:id="@+id/conditionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:fontFamily="sans-serif-light"
+                android:text="Condition"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="25sp">
+
+            </TextView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:gravity="center">
+                <ImageView
+                    android:layout_gravity="center"
+                    android:id="@+id/picToday"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:src="@drawable/cloudy_sunny"
+                    android:layout_marginEnd="16dp">
+
+                </ImageView>
+
+                <TextView
+                    android:id="@+id/temperatureText"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="sans-serif-light"
+                    android:text="25°"
+                    android:layout_marginStart="14dp"
+                    android:textAlignment="center"
+                    android:textColor="@color/text_color"
+                    android:textSize="110sp">
+
+                </TextView>
+            </LinearLayout>
+
+
+            <TextView
+                android:id="@+id/HighLowText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="sans-serif-light"
+                android:text="High/Low"
+                android:textAlignment="center"
+                android:textColor="@color/text_color"
+                android:textSize="26sp">
+
+            </TextView>
+
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/gradient_background"
+                android:layout_margin="24dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal"
+                    app:layout_constraintBottom_toBottomOf="parent"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:layout_weight="0.333"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/wind">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/windText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="3 m/s"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Wind"
+                            android:textAlignment="center"
+                            android:textColor="@color/white1">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:layout_weight="0.333"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/feelsLikeText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="sans-serif-light"
+                            android:text="-20°"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textSize="40sp">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Feels like"
+                            android:textAlignment="center"
+                            android:textColor="@color/white1">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_margin="16dp"
+                        android:layout_weight="0.333"
+                        android:orientation="vertical">
+
+                        <ImageView
+                            android:layout_width="34dp"
+                            android:layout_height="34dp"
+                            android:layout_gravity="center"
+                            android:src="@drawable/humidity">
+
+                        </ImageView>
+
+                        <TextView
+                            android:id="@+id/humidityText"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="20%"
+                            android:textSize="20sp"
+                            android:textAlignment="center"
+                            android:textColor="@color/white"
+                            android:textStyle="bold">
+
+                        </TextView>
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Humidity"
+                            android:textAlignment="center"
+                            android:textColor="@color/white1">
+
+                        </TextView>
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp"
+                android:id="@+id/RV"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:clipToPadding="false"
+                android:background="@drawable/rv_background"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"/>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="24dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginEnd="8dp">
+                <androidx.recyclerview.widget.RecyclerView
+                    android:layout_gravity="center"
+                    android:background="@drawable/rv_background"
+                    android:id="@+id/RV1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:clipToPadding="false"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    android:paddingStart="6dp"
+                    android:paddingEnd="6dp"
+                    android:paddingBottom="3dp"/>
+            </LinearLayout>
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>
