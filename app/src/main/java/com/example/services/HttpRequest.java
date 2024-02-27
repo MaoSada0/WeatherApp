@@ -16,11 +16,11 @@ import javax.net.ssl.HttpsURLConnection;
 public class HttpRequest implements Runnable {
 
     Handler handler;
-    static final String APIKEY = "f3af264244ada62ff6c76a1e6108f276";
-    static final String APIREQUEST = "https://api.openweathermap.org/data/2.5/weather";
-    static final String REQUEST = "https://api.weatherapi.com/v1/current.json?key=934781b782ef4316824144352231512&q=Moscow&aqi=no";
-    static final String REQUESTbefore= "https://api.weatherapi.com/v1/forecast.json?key=934781b782ef4316824144352231512 &q=";
-    static final String REQUESTlast = "&days=10&aqi=no&alerts=no";
+    static final String APIKEY = "";
+    static final String APIREQUEST = "";
+    static final String REQUEST = "";
+    static final String REQUESTbefore= "";
+    static final String REQUESTlast = "";
     String CITY = "London";
 
     URL url;
